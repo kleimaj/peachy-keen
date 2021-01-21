@@ -4,6 +4,9 @@ import { css } from '@emotion/react';
 import { Link } from 'gatsby';
 import Logo from '../assets/icons/logo.svg';
 
+const Wrapper = styled.header`
+  background: #feeee8;
+`;
 const NavLink = styled(Link)`
   color: #222;
   font-size: 1rem;
@@ -15,7 +18,7 @@ const NavLink = styled(Link)`
 `;
 
 const Header = () => (
-  <header>
+  <Wrapper>
     <NavLink to='/'>
       <Logo
         css={css`
@@ -24,7 +27,7 @@ const Header = () => (
         `}
       />
     </NavLink>
-  </header>
+  </Wrapper>
 );
 
 export default Header;
