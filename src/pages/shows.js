@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 export default () => (
   <>
-    <h1>About</h1>
+    <h1>Shows</h1>
     <p>This is the about page</p>
     <Link to='/'>&larr; Back to Home</Link>
   </>
