@@ -6,6 +6,7 @@ import Logo from '../assets/icons/logo.svg';
 
 const Wrapper = styled.header`
   background: #feeee8;
+  border-bottom: 1px solid #ddd;
 `;
 const NavLink = styled(Link)`
   color: #222;
@@ -27,6 +28,17 @@ const Header = () => (
         `}
       />
     </NavLink>
+    <nav
+      css={css`
+        margin-top: 0;
+      `}
+    >
+      <NavLink to='/'>Home</NavLink>
+      <NavLink to='/about'>About</NavLink>
+      <NavLink to='/merch'>Merch</NavLink>
+      <NavLink to='/shows'>Shows</NavLink>
+      <NavLink to='/contact'>Contact</NavLink>
+    </nav>
   </Wrapper>
 );
 
