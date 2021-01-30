@@ -8,9 +8,11 @@ const Wrapper = styled.header`
   background: #feeee8;
   border-bottom: 1px solid #ddd;
   display: flex;
-  justify-content: space-between;
-  padding: 0.5rem calc((100vw - 550px) / 2);
+  justify-content: space-around;
+  //   padding: 0.5rem calc((100vw - 550px) / 2);
   align-items: center;
+  border-radius: 0 0 5px 5px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
 `;
 const NavLink = styled(Link)`
   color: #222;
@@ -35,8 +37,8 @@ const Header = () => (
     <NavLink to='/'>
       <Logo
         css={css`
-          width: 100px;
-          height: 100px;
+          width: 60px;
+          height: 60px;
         `}
       />
     </NavLink>
@@ -44,6 +46,8 @@ const Header = () => (
       css={css`
         margin-top: 0;
         display: flex;
+        justify-content: space-evenly;
+        align-items: center;
       `}
     >
       <NavLink to='/' activeClassName='current-page'>
