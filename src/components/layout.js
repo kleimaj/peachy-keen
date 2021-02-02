@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './header';
 import { Global, css } from '@emotion/react';
+import Helmet from 'react-helmet';
 
 const Layout = ({ children }) => (
   <>
@@ -53,6 +54,11 @@ const Layout = ({ children }) => (
         }
       `}
     />
+    <Helmet>
+      <html lang='en' />
+      <title></title>
+      <meta name='description' content='site-description' />
+    </Helmet>
     <Header />
     <main
       css={css`
