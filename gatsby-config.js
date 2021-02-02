@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Peachy Keen Website',
+    title: 'Peachy Keen',
+    description:
+      'A Funky, Jazzy 5 Piece Band, dedicated to bringing the best tunes to your ears.',
   },
   plugins: [
     'gatsby-plugin-emotion',
